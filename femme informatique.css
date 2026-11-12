@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+html, body {
+    width: 100%;
+    background: #f4f1fa;
+    scroll-behavior: smooth;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vh;
+    width: 100%;
+    background: #3b1f5c;
+}
+.list-title-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.title-main {
+    font-size: 24px;
+    color: #ffffff;
+}
+.list-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+}
+.list-main a {
+    text-decoration: none;
+    color: #f1e3ff;
+    font-weight: 600;
+}
+.list-main a:hover {
+    color: #ff6f61;
+    text-decoration: underline;
+}
+.image-top {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 0 15px;
+}
+.image-top img {
+    width: 33.33%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.home-page {
+    padding: 20px 15px;
+}
+.title-page {
+    padding-bottom: 15px;
+    color: #3b1f5c;
+}
+.para-page {
+    margin-bottom: 12px;
+    color: #4a4453;
+}
+.history {
+    padding: 20px 15px;
+}
+.pioneer-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.pioneer-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.image-pioneer img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.card-pioneer a {
+    color: #3b1f5c;
+    text-decoration: none;
+}
+.card-pioneer a:hover {
+    color: #ff6f61;
+    text-decoration: underline;
+}
+.text-pioneer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #4a4453;
+}
+.contact-page {
+    padding: 20px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 15px;
+    text-align: left;
+}
+.contact-form label {
+    font-weight: bold;
+    color: #3b1f5c;
+}
+.contact-form input,.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: "Raleway", sans-serif;
+}
+.contact-form button {
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.contact-form button:hover {
+    background: #e85a4d;
+}
+.pioneer{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #ff6f61;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    background: #3b1f5c;
+    color: #f1e3ff;
+}
+.mentions{
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.back-to-top {
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    height: 3em;
+    width: 3em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313131;
+    border-radius: 100%;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+.back-to-top:hover {
+    background-color: yellow;
+    color: #000
+}
+
+@media (min-width: 576px) {
+    header {
+        padding: 60px 30px;
+    }
+    .list-title-main {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+    }
+    .title-main {
+        font-size: 36px;
+    }
+    .image-top img {
+        height: 220px;
+    }
+    .image-pioneer img {
+        width: 150px;
+        height: 150px;
+    }
+    .pioneer-main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pioneer-card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 960px) {
+    .image-top img {
+        height: 280px;
+    }
+    .image-pioneer img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        padding: 8vh;
+    }
+    .title-main {
+        font-size: 45px;
+    }
+    .image-top img {
+        height: 320px;
+    }
+    .image-pioneer img {
+        width: 200px;
+        height: 200px;
+    }
+    .pioneer-card {
+        width: 30%;
+    }
+    .home-page,.history,.contact-page {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+}
